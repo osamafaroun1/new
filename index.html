@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        Todo List
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" id="todoInput" class="form-control" placeholder="Enter your task...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" onclick="createData()" id="add">Add</button>
+                            </div>
+                        </div>
+                        <div id="DeleteAll">
+
+                        </div>
+                        <div id="searchData">
+                            <input id="search" type="text" class="form-control mt-2" placeholder="search task name">
+                            <button class="btn btn-warning  mt-2 w-100" onclick="searchData()">SearchByNameTask</button>
+                        </div>
+                        <ul class="list-group flex justify-content-between" id="todoList">
+                            <!--
+                           <li>osama<button id="Edit" class='ms-auto'>Edit</button><button class='ms-auto id="Delete">Delete</button></li>
+                          
+                           -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
